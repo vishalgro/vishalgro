@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room dekho</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            background: linear-gradient(90deg, #a31a8e, #ff4500);
+        }
+        .header {
+            
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-bar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 300px;
+        }
+        .header .search-bar button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .filters {
+            width: 20%;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+        .filters h3 {
+            margin-top: 0;
+        }
+        .filters .filter-group {
+            margin-bottom: 20px;
+        }
+        .filters .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .filters .filter-group input[type="checkbox"],
+        .filters .filter-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .filters .filter-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .filters .filter-group button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .results {
+            width: 80%;
+        }
+        .results .result-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .results .result-item img {
+            width: 150px;
+            height: 100px;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+        .results .result-item .details {
+            flex-grow: 1;
+        }
+        .results .result-item .details h4 {
+            margin: 0 0 10px 0;
+        }
+        .results .result-item .details p {
+            margin: 0 0 5px 0;
+        }
+        .results .result-item .details .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+        .results .result-item .actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .results .result-item .actions button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .results .result-item .actions .sold-out {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+
+            <img alt="Logo" src="image/now.png" style="height: 90px; margin-right: 20px;">
+            Room dekho
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for rooms...">
+            <button type="button">Search</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter location">
+            </div>
+            <div class="filter-group">
+                <label>Price Range</label>
+                <input type="radio" name="price" id="low" value="low">
+                <label for="low">Low</label>
+                <input type="radio" name="price" id="medium" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" name="price" id="high" value="high">
+                <label for="high">High</label>
+            </div>
+            <div class="filter-group">
+                <label>Amenities</label>
+                <input type="checkbox" id="wifi" value="wifi">
+                <label for="wifi">WiFi</label>
+                <input type="checkbox" id="ac" value="ac">
+                <label for="ac">AC</label>
+                <input type="checkbox" id="parking" value="parking">
+                <label for="parking">Parking</label>
+            </div>
+            <button type="button">Apply Filters</button>
+        </div>
+        <div class="results">
+            <div class="result-item">
+                <img src="image/Hotel_Room_(9638499309).jpg" alt="Room Image">
+                <div class="details">
+                    <h4>Spacious Room in City Center</h4>
+                    <p>Location: Downtown</p>
+                    <p class="price">7000/month</p>
+                </div>
+                <div class="actions">
+                    <button type="button">View Details</button>
+                    <button type="button" class="sold-out">Sold Out</button>
+                </div>
+            </div>
+            <div class="result-item">
+                <img src="image/amara-hotel-cyprus-p.webp" alt="Room Image">
+                <div class="details">
+                    <h4>Cozy Room with Garden View</h4>
+                    <p>Location: Suburbs</p>
+                    <p class="price">6000/month</p>
+                </div>
+               
+                <div class="actions">
+                    <button type="button">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.search-rooms input[type="range"] {
+    width: 100%;
+}
+
+#price-display {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+.submit-home {
+    padding: 20px;
+    max-width: 610px;
+    height: auto;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #a8369b, #8f5e4d);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-home header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.submit-home header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.submit-home header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.submit-home header a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.submit-home form {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-home label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.submit-home input[type="text"],
+.submit-home input[type="file"] {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #b3dcc6;
+    border-radius: 4px;
+}
+
+.submit-home button {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1em;
+   background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-home button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+           background: linear-gradient(135deg, #a8369b, #ff4500);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            width: 700px;
+            height: 450px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left-panel, .right-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .left-panel {
+            background-color: #fff;
+        }
+        .right-panel {
+            background: linear-gradient(135deg, #a8369b, #ff4500);
+            color: #ffffff;
+        }
+        .left-panel h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .left-panel .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .left-panel .social-icons i {
+            font-size: 24px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .left-panel .social-icons i:hover {
+            background-color: #f0f2f5;
+        }
+        .left-panel form {
+            width: 100%;
+        }
+        .left-panel form input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .left-panel form a {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+            color: #aa28aa;
+            text-decoration: none;
+        }
+        .left-panel form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #bc2c8a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .left-panel form button:hover {
+            background-color: #a12282;
+        }
+        .right-panel h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .right-panel p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .right-panel button {
+            padding: 12px 24px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .right-panel button:hover {
+            background-color: #fff;
+            color: #a8369b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Login</h2>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>or use your email password</p>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+        <div class="right-panel">
+            <h2>Hello, Users!</h2>
+            <p>Register with your personal details to use all of our site's features</p>
+            <button>SIGN UP</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* General button styles */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+   
+}
+
+/* Styling for the register button */
+.register-button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Spacing from previous elements */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.register-button a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text */
+}
+
+/* Hover effect */
+.register-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus effect */
+.register-button:focus {
+    outline: none; /* Remove default outline */
+}
